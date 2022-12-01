@@ -1,0 +1,45 @@
+<br>
+<br>
+<br>
+<br>
+<ion-content class="has-header">
+  <div >
+    <ion-row class="wrapper">
+      <ion-col *ngFor ="let usuarios of usuarios">
+        <ion-avatar size="3" class="editado">
+          <ion-img  src="{{usuarios.img}}"></ion-img>
+        </ion-avatar>
+      <ion-col size="7">
+            <span >{{usuarios.name}}</span>
+            <span class="handle">{{usuarios.nick}}</span>
+            <span class="handle">. 2h</span>
+          <ion-col size="12">
+            <div >{{usuarios.tweet}}</div>
+          </ion-col>
+          </ion-col>
+      </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-start">
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              13
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear"  size="small">
+              <ion-icon name="repeat-outline" slot="start"></ion-icon>
+              35
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear"  size="small">
+              <ion-icon name="heart-outline" slot="start"></ion-icon>
+              9
+            </ion-button>
+          </ion-col>
+
+        </ion-row>
+  </div>
+
+</ion-content>
